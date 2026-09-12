@@ -49,15 +49,11 @@
  * Hint: vsnprintf() into a char buf[512], then write(1, buf, n). */
 void emit(const char *fmt, ...)
 {
-    (void)fmt;
-    /* TODO */
 }
 
 /* NODE <label> pid=<pid> ppid=<ppid> */
 void emit_node(const char *label)
 {
-    (void)label;
-    /* TODO */
 }
 
 /* REAP <label> pid=<pid> status=exited:<code>
@@ -65,15 +61,11 @@ void emit_node(const char *label)
  * Use WIFEXITED/WEXITSTATUS and WIFSIGNALED/WTERMSIG. */
 void emit_reap(const char *label, pid_t pid, int status)
 {
-    (void)label; (void)pid; (void)status;
-    /* TODO */
 }
 
 /* INFO <key>=<value> */
 void emit_info(const char *key, const char *valfmt, ...)
 {
-    (void)key; (void)valfmt;
-    /* TODO */
 }
 
 /* ============================================================== TASK 2 ==== */
@@ -86,8 +78,6 @@ void emit_info(const char *key, const char *valfmt, ...)
  * two characters after it. */
 char proc_state(pid_t pid)
 {
-    (void)pid;
-    return '?';   /* TODO */
 }
 
 /* ============================================================== TASK 3 ==== */
@@ -100,8 +90,6 @@ char proc_state(pid_t pid)
  *   INFO child_getppid_equals_root=1   (from the child, after checking) */
 int cmd_fork1(void)
 {
-    /* TODO */
-    return 0;
 }
 
 /* ============================================================== TASK 4 ==== */
@@ -113,9 +101,6 @@ int cmd_fork1(void)
  * This is where rule (b) at the top of the file matters. */
 int cmd_fanout(int n)
 {
-    (void)n;
-    /* TODO */
-    return 0;
 }
 
 /* ============================================================== TASK 5 ==== */

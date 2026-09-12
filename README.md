@@ -1,1 +1,2 @@
-# cs450-hw1
+I crashed out.
+I don't know what I'm doing.
